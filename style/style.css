@@ -64,6 +64,10 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+a {
+    text-decoration: none;
+}
+
 footer {
     padding-top: 5rem;
     background-color: var(--main-color-one);
@@ -241,7 +245,7 @@ nav ul div:last-of-type img {
 
 #home section:first-of-type span {
     display: block;
-    font-size: 2.25rem;
+    font-size: 1.7rem;
     font-family: var(--font-thin);
 }
 
@@ -249,6 +253,7 @@ nav ul div:last-of-type img {
     padding: 0.6em 1em;
     margin: 0.4em 0;
     width: fit-content;
+    white-space: nowrap;
     font-size: 1.625rem;
     font-family: var(--font-thin);
     background-color: var(--main-color-one);
@@ -304,6 +309,7 @@ nav ul div:last-of-type img {
     grid-template-columns: 1;
     grid-template-rows: 4;
     transition: 1s;
+    color: var(--main-color-six);
 }
 
 .carouselbase img {
@@ -362,6 +368,7 @@ nav ul div:last-of-type img {
 }
 
 .carinactive h3 {
+    margin-top: 0.5rem;
     font-size: 1.2rem;
 }
 
@@ -575,7 +582,7 @@ nav ul div:last-of-type img {
     font-size: 0;
     text-align: center;
     color: var(--main-color-one);
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     animation: openheadtext 0.7s ease-out 0.5s;
     animation-fill-mode: forwards;
 }
@@ -622,6 +629,7 @@ nav ul div:last-of-type img {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     transition: 1s;
+    color: var(--main-color-six);
 }
 
 #mywork section:nth-of-type(2) h3 {
@@ -785,7 +793,7 @@ nav ul div:last-of-type img {
     font-size: 0;
     text-align: center;
     color: var(--main-color-one);
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     animation: openheadtext 0.7s ease-out 0.5s;
     animation-fill-mode: forwards;
 }
@@ -803,9 +811,12 @@ nav ul div:last-of-type img {
 }
 
 #aboutme section:nth-of-type(2) img {
-    width: 24rem;
     grid-area: 1 / 1 / 4 /2;
     justify-self: end;
+    width: 21.125rem;
+    height: 24.6875rem;
+    object-fit: fill;
+    border-radius: 3rem;
 }
 
 #aboutme section:nth-of-type(2) h2 {
@@ -826,6 +837,7 @@ nav ul div:last-of-type img {
     grid-area: 2 / 2 / 3 /3;
     font-family: var(--font-thin);
     font-size: 1.2rem;
+    margin-bottom: 1em;
 }
 
 #aboutme section:nth-of-type(2) a {
@@ -848,6 +860,7 @@ nav ul div:last-of-type img {
 
 #aboutme section:nth-of-type(2) a img {
     width: 1.625em;
+    height: auto;
     margin-left: 1em;
 }
 
@@ -950,6 +963,7 @@ nav ul div:last-of-type img {
     grid-template-columns: 1fr 1fr;
     gap: 0em 8em;
     margin-top: 5rem;
+    margin-right: 3rem;
 }
 
 #aboutme section:nth-of-type(4) div {
@@ -1017,7 +1031,6 @@ nav ul div:last-of-type img {
     flex-flow: column;
     height: 25rem;
     align-items: center;
-    justify-content: center;
     background-image: url(../images/backdevelop.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1028,6 +1041,7 @@ nav ul div:last-of-type img {
     padding-bottom: 1rem;
     font-family: var(--font-thick);
     width: fit-content;
+    margin-top: 5rem;
 }
 
 #aboutme section:nth-of-type(5) span {
@@ -1233,7 +1247,8 @@ nav ul div:last-of-type img {
     margin-left: 4rem;
 
 }
-#contact h1 span{
+
+#contact h1 span {
     font-family: var(--font-thin);
 }
 
@@ -1274,9 +1289,11 @@ nav ul div:last-of-type img {
     align-self: center;
     justify-self: center;
 }
-#contact a:nth-of-type(1):hover{
+
+#contact a:nth-of-type(1):hover {
     font-size: 1.6rem;
 }
+
 #contact p:nth-of-type(3) {
     grid-area: 4 / 2 / 5 / 3;
     align-self: end;
@@ -1322,20 +1339,87 @@ nav ul div:last-of-type img {
     border-radius: 50%;
     margin-left: 6rem;
 }
-#contact a img{
+
+#contact a img {
     width: 2.5rem;
     height: 2.5rem;
     transition: 0.2s;
 
 }
-#contact a:nth-of-type(2):hover, #contact a:nth-of-type(3):hover{
+
+#contact a:nth-of-type(2):hover,
+#contact a:nth-of-type(3):hover {
     width: 5.6rem;
     height: 5.6rem;
 }
-#contact a:hover img{
+
+#contact a:hover img {
     width: 3rem;
     height: 3rem
 }
+
 #contact footer {
     background-color: var(--main-color-five);
+}
+
+#oopsbody {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#oops {
+    padding-top: 5em;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+#oops h1 {
+    height: var(--header-size);
+    color: var(--main-color-five);
+}
+
+#oops p {
+    font-family: var(--font-thin);
+    color: var(--main-color-six);
+    width: 39.375rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#oops div {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 2rem;
+    width:39.375rem;
+    justify-content: space-around;
+    height: 5rem;
+    align-items: center;
+
+}
+
+#oops a {
+    padding: 0.6em 1em;
+    margin: 0.4em 0;
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+    font-size: 1.625rem;
+    font-family: var(--font-thin);
+    background-color: var(--main-color-five);
+    border-radius: 50em;
+    color: var(--main-color-one);
+    display: flex;
+    transition: .5s;
+    text-decoration: none;
+}
+#oops a:hover{
+    font-size: 1.8rem; 
+}
+#oops a img {
+    margin-right: 1rem;
+    transform: rotate(180deg);
 }
