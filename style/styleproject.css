@@ -225,7 +225,7 @@
     align-items: center;
     margin: 7rem auto;
     width: 90%;
-    height: 25rem;
+    min-height: 29.5vw;
     background: url(../projects/images/generalbackblue.png);
     background-size: 100%;
     background-repeat: no-repeat;
