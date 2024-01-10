@@ -550,3 +550,67 @@ margin: auto;
     width: 23.8125rem;
     align-self: start;  
 }
+
+
+#boekzoek section:nth-of-type(2){
+    margin:auto;
+    width: 88%;
+}
+#boekzoek section:nth-of-type(2) h2{
+    font-size: 3rem;
+    font-family: var(--font-thick);
+    margin-bottom: 1rem;
+}
+#boekzoek section:nth-of-type(2) h2 span{
+    font-family: var(--font-thin);
+    color: var(--main-color-three);
+}
+#boekzoek section:nth-of-type(2) p{
+    width: 50%;
+    font-family: var(--font-thin);
+    font-size: 1.2rem;
+}
+#boekzoek section:last-of-type{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../projects/images/vidbackyel.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 37rem;
+    margin-top: 6rem;
+}
+#boekzoek>div{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 88%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+#boekzoek>div img{
+    width: 20.9375rem;
+}
+#boekzoek section:last-of-type h2 {
+    font-size: 3.5rem;
+    font-family: var(--font-thick);
+}
+
+#boekzoek section:last-of-type span {
+    font-family: var(--font-thin);
+    color: var(--main-color-two);
+}
+
+#boekzoek section:last-of-type p {
+    width: 51rem;
+    font-family: var(--font-thin);
+    font-size: 1.2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+#boekzoek section:last-of-type iframe {
+    border: 2px var(--main-color-two) solid;
+    border-radius: 2rem;
+}
