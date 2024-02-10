@@ -5,19 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Work - Portfolua</title>
-    <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="/images/luafavo.png">
     <link rel="stylesheet" href="https://use.typekit.net/pjt7yzw.css">
+    <link rel="stylesheet" href="style/style.css" media="(min-width: 1000px)">
+    <link rel="stylesheet" href="style/stylephone.css" media="(max-width: 1000px)">
 </head>
 
 <body>
 
     <head>
-        <nav>
+        <nav class="phonehidden">
             <ul>
                 <span><a href="index.html"><img src="images/luatelgtban.png" alt="Home button"><img
                             src="images/luatbangroen.png" alt=""></a></span>
                 <div>
+                    <li><a href="mywork.html">My Work</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+                <div>
+                    <li><a href="https://www.instagram.com/okayllua/" target="_blank"><img
+                                src="images/icon-instagram.png"></a>
+                    </li>
+                    <li><a href="https://open.spotify.com/user/lua.telgt" target="_blank"><img
+                                src="images/icon-spotify.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lua-telgt-b68886293/" target="_blank"><img
+                                src="images/icon-linkedin.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+        <nav class="desktophidden">
+            <button id="openmenu"><img src="images/menubutton.png"></button>
+            <ul id="fullmenu">
+                <button id="closemenu"><img src="images/close.png"></button>
+                <img src="images/luatelgtban.png" alt="Logo">
+                <div>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="mywork.html">My Work</a></li>
                     <li><a href="aboutme.html">About Me</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -44,7 +67,52 @@
             <img src="images/arrowdown.png" alt="">
 
         </section>
-        <section>
+        <section class="desktophidden carouselbase" >
+            <h2>My <span>favourite</span> projects</h2>
+            <div>
+                <ul>
+                    <li>
+                        <a href="projects/clubsafe.html" class="caractive">
+                            <img src="images/clubsafeban.jpg" alt="">
+                            <h3>Club Safe</h3>
+                            <p>December 2022</p>
+                            <p>Club Safe is one of my favourite projects ever. It is a Non-Profit organisation that
+                                helps
+                                students and outher young adults clubbing safely. Keypoints in this project were
+                                content,
+                                tone of voice and branding.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects/mensenverhalen.html" class="carinactive">
+                            <img src="images/mensenverhalenban.png" alt="">
+                            <h3>Mensen Verhalen</h3>
+                            <p>April 2023</p>
+                            <p>'Mensen Verhalen' is something completely different; It's an prototype exhibition i
+                                set
+                                up together with Lanxiang Vermeulen & Vivanne Hoogendam
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="emptypage.html" class="carinactive">
+                            <img src="images/scooperiaban.png" alt="">
+                            <h3>Lua's Scooperia</h3>
+                            <p>March 2023</p>
+                            <p>Lua's Scooperia is a game made with HTML, CSS and JavaScript. It was my first time
+                                using
+                                JS and i was mostly exploring the possibilities but what i ended up with is a fun
+                                game
+                                with over a 500 levels.</p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <button id="buttonleft" class="disabled"><img src="images/fullarrowwhite.png" alt=""></button id>
+            <button id="buttonright"><img src="images/fullarrowwhite.png" alt=""></button>
+        </section>
+        <section class="phonehidden">
             <h2>My <span>favourite</span> projects</h2>
             <ul>
                 <li>
@@ -79,6 +147,10 @@
                 </li>
             </ul>
         </section>
+
+        <!-- WHEN ADDING SOMETHING PLEASE UPDATE VALUE OF AWTOTALITEMS 
+            IN SCRIPT.JS AS WELL AS COLLUMNS IN STYLEPHONE.CSS LY -->
+            
         <section>
             <h2><span>all</span> projects</h2>
             <ul>
@@ -176,7 +248,22 @@
 
                     </a>
                 </li>
+                <li>
+                    <a href="emptypage.html">
+                        <img src="images/boekenzoekerban.jpg" alt="">
+                        <h3>KARAOKE APP</h3>
+                        <p>Oktober 2023</p>
+                        <p>'De Boekenzoeker' is a collaboration between the Public Library and the municipality of
+                            Amsterdam. By using intruiging shapes and vibrant colors, it's motivating young scholars
+                            (10-14) to start reading more.</p>
+                            <p class="closed"><span>This case is not ready yet</span>
+                    </a>
+                </li>
             </ul>
+        <div>
+        <button id="awbuttonleft" class="disabled"><img src="images/fullarrowright.png" alt=""></button>
+        <button id="awbuttonright"><img src="images/fullarrowright.png" alt=""></button>
+        </div>
         </section>
     </main>
     <footer>
@@ -186,6 +273,7 @@
         </div>
     </footer>
     <script src="script/script.js"></script>
+    <script src="script/menu.js"></script>
 </body>
 
 </html>
