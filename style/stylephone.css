@@ -197,7 +197,7 @@ nav ul>img {
     transition: 0.5s;
 }
 nav ul div:first-of-type{
-    margin: 50% 0;
+    margin: 20% 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
