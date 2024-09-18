@@ -17,6 +17,7 @@
     --font-thin: josefin-sans;
     --font-thick: Rubik;
     --header-size: 4.5rem;
+    font-size: 14;
 }
 
 
@@ -26,7 +27,7 @@
 /*****************/
 @media only screen and (min-width: 1500px) {
     :root {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -217,13 +218,15 @@ nav ul div:last-of-type img {
 /* HOMEPAGE */
 /************/
 #home section:first-of-type {
-    background-image: url(../images/homebanner.png);
-    background-size: 100% 100%;
+    background-image: url(../images/homebanner.svg);
+    background-color: #82C363;
+    background-size: 100% auto;
+    background-position: bottom;
     display: grid;
-    grid-template-rows: 1fr 0.3fr 0.5fr;
+    grid-template-rows: .6fr 0.1fr 0.5fr;
     grid-template-columns: 0.8fr 1fr;
     margin-bottom: 4rem;
-    height: fit-content;
+    height: 80vh;
 }
 
 #home section:first-of-type>img:first-of-type {
@@ -238,8 +241,8 @@ nav ul div:last-of-type img {
 }
 
 #home section:first-of-type h1 {
-    padding-top: 3rem;
-    margin-left: 7rem;
+    padding-top: 7rem;
+    margin-left: 10rem;
     margin-bottom: 0;
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -255,7 +258,7 @@ nav ul div:last-of-type img {
 #home section:first-of-type a {
     grid-area: 3 / 1 / 4 / 2;
     padding: 0.6em 1em;
-    margin: 0.4em 7rem;
+    margin: 0.4em 10rem;
     width: fit-content;
     height: fit-content;
     white-space: nowrap;
@@ -267,6 +270,8 @@ nav ul div:last-of-type img {
     display: flex;
     transition: .5s;
     text-decoration: none;
+    align-items: center;
+
 }
 
 #home section:first-of-type a:hover {
@@ -276,9 +281,13 @@ nav ul div:last-of-type img {
 
 #home section:first-of-type a img {
     margin-left: 1em;
-    width: auto;
+    width: 2rem;
+    height: 2rem;
 }
 
+/************/
+/* carousel */
+/************/
 
 .carouselbase{
     overflow: hidden;
@@ -303,7 +312,7 @@ nav ul div:last-of-type img {
     width: 100%;
     justify-items: left;
     transition: 1s;
-    height: 27rem;
+    height: 29rem;
 }
 
 .carouselbase li a {
@@ -394,7 +403,7 @@ nav ul div:last-of-type img {
 
 .caractive h3 {
     font-size: 2rem;
-    margin: .1rem 0 1rem 0;
+    margin: .1rem 0 .5rem 0;
 }
 
 .caractive img {
@@ -407,6 +416,7 @@ nav ul div:last-of-type img {
     color: var(--main-color-two);
     grid-area: 2 / 1 / 3 / 2;
     font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .caractive p:last-of-type {
@@ -426,6 +436,10 @@ nav ul div:last-of-type img {
     display: inline-block;
 }
 
+
+/**********************/
+/* GET TO KNOW ME BAN */
+/**********************/
 
 #home section:nth-of-type(3) {
     margin-top: 4rem;
@@ -482,6 +496,7 @@ nav ul div:last-of-type img {
     background-position: 50% 50%;
     width: 90%;
     height: 12rem;
+    min-height: 20rem;
 }
 
 #home section:nth-of-type(3) h3 {
@@ -599,16 +614,20 @@ nav ul div:last-of-type img {
 }
 
 
-/************/
-/* ABOUT ME */
-/************/
+/***********/
+/* MY WORK */
+/***********/
 #mywork section:first-of-type {
-    background-image: url(../images/myworkban.png);
+    background-image: url(../images/myworkban.svg);
+    background-color: var(--main-color-two);
+    background-size: 100% auto;
+    background-position: bottom;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-top: 14rem;
-    margin-bottom: 4rem;
+    justify-content: center;
+    height: 80vh;
+    margin-bottom: 5rem;
 }
 
 #mywork section:first-of-type p {
@@ -703,7 +722,7 @@ nav ul div:last-of-type img {
 #mywork section:nth-of-type(3) img {
     margin-bottom: 1rem;
     width: 100%;
-    height: 14em;
+    height: 15vw;
     border-radius: 2.25rem;
     object-fit: cover;
     transition: .9s;
@@ -711,6 +730,10 @@ nav ul div:last-of-type img {
 #mywork section:nth-of-type(3) a:hover {
     transform: scale(1.1);
 }
+
+/****************/
+/* ALL PROJECTS */
+/****************/
 
 #mywork section:nth-of-type(4) {
     display: flex;
@@ -746,7 +769,7 @@ nav ul div:last-of-type img {
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
-    gap: 5rem 3rem;
+    gap: 7rem 7rem;
     width: 95%;
     list-style: none;
 }
@@ -773,7 +796,7 @@ nav ul div:last-of-type img {
 
 #mywork section:nth-of-type(4) li img {
     width: 100%;
-    height: 17.5vw;
+    height: 16vw;
     border-radius: 2.25rem;
     object-fit: cover;
     grid-area: 1 / 1 / 2 / 2;
@@ -805,7 +828,7 @@ nav ul div:last-of-type img {
     font-size: 1.5em;
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 17.5vw;
+    height: 16vw;
 }
 
 #mywork section:nth-of-type(4) li a .open span {
@@ -826,13 +849,19 @@ nav ul div:last-of-type img {
     border-bottom: 3px var(--main-color-four) solid;
     margin-bottom: 1rem;
 }
-  li a .closed:hover{
+#mywork section:nth-of-type(4) li a .closed:hover{
     font-size: 1.2rem;
+    z-index: 2;
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 17.5vw;
+    height: 16vw;
 }
 
+
+
+/****************/
+/* ALL PROJECTS */
+/****************/
 #aboutme section:first-of-type {
     background-image: url(../images/aboutmeban.png);
     display: flex;
@@ -1089,11 +1118,14 @@ nav ul div:last-of-type img {
     margin-top: 10em;
     display: flex;
     flex-flow: column;
-    height: 25rem;
+    height: fit-content;
+    padding: 4rem 0;
     align-items: center;
-    background-image: url(../images/backdevelop.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../images/trippleblubleft.svg), url(../images/trippleblubright.svg);
+    background-size: auto 100%, auto 100%; /* Keeps both images at their original size */
+    background-position: left center, right center; /* Aligns the first image to the bottom left and the second image to the bottom right */
+    background-repeat: no-repeat, no-repeat;
 }
 
 #aboutme section:nth-of-type(5) h2 {
@@ -1101,7 +1133,6 @@ nav ul div:last-of-type img {
     padding-bottom: 1rem;
     font-family: var(--font-thick);
     width: fit-content;
-    margin-top: 5rem;
 }
 
 #aboutme section:nth-of-type(5) span {
@@ -1110,7 +1141,7 @@ nav ul div:last-of-type img {
 }
 
 #aboutme section:nth-of-type(5) p {
-    width: 45rem;
+    width: 45%;
     font-size: 1.2rem;
     font-family: var(--font-thin);
     text-align: center;

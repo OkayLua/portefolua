@@ -57,6 +57,12 @@ var awbuttonright = document.getElementById("awbuttonright");
 var awcont = document.querySelector("#mywork section:nth-of-type(4) ul");
 var awactive = 1;
 var awmargin = 0;
+
+// CHANGE THIS NUMBER WHEN CHANGING THE AMOUNT OF ITEMS IN THE MY WORK PAGE
+// Devide the amount of items by three and always round up: So 9 items will be 9/3= 3 
+// 10 items will be 10/3= 3,3 so that will be 4
+// Also change this number in the stylephone.css line 676
+
 var awnumberOfItems = 3;
 
 function moveawright() {
